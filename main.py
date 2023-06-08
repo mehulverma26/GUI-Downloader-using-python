@@ -7,6 +7,11 @@ class Downloaader:
         self.window=tk.Tk()
         self.window.title("GUI Downloader")
         self.url_label=tk.Label(text="Enter URL: ")
+        self.url_label.pack()
+        self.url_entry=tk.Entry()
+        self.url_entry.pack()
+        self.browse_button=tk.Button(text="Browser", command=self.browse_file)
+
 def downloadFile():
     pass
 
