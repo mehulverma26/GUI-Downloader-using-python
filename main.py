@@ -1,7 +1,15 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import ttk
 import requests
-import 
+
+class Downloaader:
+    def __init__(self):
+        self.window=tk.Tk()
+        self.window.title("GUI Downloader")
+        self.url_label=tk.Label(text="Enter URL: ")
+def downloadFile():
+    pass
+
 root=Tk()
 frm=ttk.Frame(root,padding=10)
 frm.grid()
