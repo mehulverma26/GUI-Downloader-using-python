@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, Tk
+from tkinter import ttk, Tk, filedialog
 import requests
 
 class Downloader:
@@ -14,10 +14,12 @@ class Downloader:
         self.browse_button.pack()
         self.download_button=tk.Button(text="Download", command=self.download)
         self.download_button.pack()
+        self.window.geometry("844x344")
         self.window.mainloop()
     
     def browse_file(self):
-        pass
+        filename= filedialog.asksaveasfilename()
+        self.url_entry.insert(0, filename)
 
     def download(self):
         pass
